@@ -35,10 +35,7 @@ function viewCart() {
       console.log(oneItem)
 
 
-  else {
-
-
-    var last = `${cart[cart.length - 1].itemName} at $${cart[cart.length - 1].itemPrice}.`
+  else {var last = `${cart[cart.length - 1].itemName} at $${cart[cart.length - 1].itemPrice}.`
 
     for(var i = 0; i < cart.length - 1; i++){
        cartItems.push(
