@@ -45,7 +45,7 @@ function viewCart() {
 
 
   else {
-    var cartItems = [1]
+
 
     var last = `${cart[cart.length - 1].itemName} at $${cart[cart.length - 1].itemPrice}.`
 
