@@ -28,7 +28,23 @@ function addToCart(item) {
 function viewCart() {
   if (cart.length === 0) {
     return `Your shopping cart is empty.`
-  } else {
+  } 
+
+  else if (cart length === 1) {
+    var cartItems = []
+
+  var last = `${cart[cart.length - 1].itemName} at $${cart[cart.length - 1].itemPrice}.`
+
+  for(var i = 0; i < cart.length - 1; i++){
+     cartItems.push(
+       `${cart[i].itemName} at $${cart[i].itemPrice}`
+     )
+  }
+  return `In your cart, you have ${cartItems} and ${last}`
+}}
+
+
+  else {
     var cartItems = []
 
     var last = `${cart[cart.length - 1].itemName} at $${cart[cart.length - 1].itemPrice}.`
