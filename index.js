@@ -30,18 +30,9 @@ function viewCart() {
     return `Your shopping cart is empty.`
   }
 
-  else if (cart length === 1) {
-    var cartItems = []
-
-  var last = `${itemName} at $${itemPrice}.`
-
-  for(var i = 0; i < cart.length - 1; i++){
-     cartItems.push(
-       `${cart[i].itemName} at $${cart[i].itemPrice}`
-     )
-  }
-  return `In your cart, you have ${cartItems} and ${last}`
-}}
+  else if (cart.length === 1){
+      var oneItem = `In your cart, you have ${Object.keys(cart[0])} at $${Object.values(cart[0])}.`
+      console.log(oneItem)
 
 
   else {
